@@ -59,7 +59,7 @@ git commit -m "ci: Set-up GitHub actions." # passes
 git commit -m "style: Fix assets (logo). [#123]" # passes
 git commit -m "Initial commit." # fails: no commit type.
 git commit -m "bootstrap: Initial commit" # fails: no full-stop.
-git commit -m "unkown: Initial commit." # fails: commit type doesn't exists.
+git commit -m "unknown: Initial commit." # fails: commit type doesn't exists.
 ```
 
 ## Commit Types
