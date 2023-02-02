@@ -1,0 +1,55 @@
+{
+  "name": "@gcoguiec/commitlint-config",
+  "version": "1.0.0",
+  "description": "gcoguiec's commitlint config",
+  "author": "Guillaume 'Yugo' Coguiec <mail@gcoguiec.com> (https://github.com/gcoguiec/)",
+  "license": "BSD-2-Clause",
+  "packageManager": "pnpm@7.25.1",
+  "type": "module",
+  "files": [
+    "index.mjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gcoguiec/commitlint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gcoguiec/commitlint-config/issues"
+  },
+  "homepage": "https://github.com/gcoguiec/commitlint-config",
+  "keywords": [
+    "commintlint-config"
+  ],
+  "scripts": {
+    "fmt": "prettier --write \"./**/*.{js,cjs,json,md}\"",
+    "fmt:check": "prettier --list-different \"./**/*.{js,cjs,json,md}\"",
+    "lint": "DEBUG=eslint:cli-engine eslint . --ext .js,.cjs,.mjs",
+    "lint:fix": "pnpm lint --fix",
+    "lint:conflicts": "npx eslint-config-prettier .eslintrc.cjs",
+    "precommit": "pnpm lint-staged",
+    "prepare": "husky install",
+    "prepush": "pnpm fmt:check",
+    "publish": "pnpm publish -r --access public",
+    "spellcheck": "cspell --config=.cspell.json \"**/*.{md,js,cjs,mjs}\"",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "engines": {
+    "node": ">=19",
+    "pnpm": ">=7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/lint": "^17.4.2",
+    "@gcoguiec/eslint-config-base": "^1.0.1",
+    "cspell": "^6.20.1",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "jest": "^29.4.1",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3"
+  }
+}
