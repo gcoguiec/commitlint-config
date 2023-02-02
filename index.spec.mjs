@@ -57,7 +57,8 @@ describe('when providing some valid cases', () => {
     'bootstrap: Initial commit.',
     'ci: Update CI build file.',
     'style: Reformat a service.',
-    'wip(message): Some message.\n\nWith a body'
+    'wip(message): Some message.\n\nWith a body',
+    'revert(fbb6553): Wrong major version.'
   ];
 
   for (const message of messages) {
@@ -120,7 +121,7 @@ describe('rules', () => {
 
   describe('subject-empty', () => {
     describe('when the subject is not present', () => {
-      const message = 'workflow: ';
+      const message = 'ci: ';
       it('fails to validate', raises('subject-empty', message));
     });
   });

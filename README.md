@@ -23,7 +23,8 @@
 - [Convention](#convention)
 - [Getting Started](#getting-started)
 - [Examples](#examples)
-- [Specifying scopes](#specifying-scopes)
+- [Commit Types](#commit-types)
+- [Specifying Scopes](#specifying-scopes)
 - [License](#license)
 
 ## Convention
@@ -61,9 +62,32 @@ git commit -m "bootstrap: Initial commit" # fails: no full-stop.
 git commit -m "unkown: Initial commit." # fails: commit type doesn't exists.
 ```
 
-## Specifying scopes
+## Commit Types
 
-Specifying component scopes:
+| Type                 | Description                                                                                                              |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `a11y`               | ♿️ Changes regarding accessibility or inclusivity.                                                                      |
+| `bootstrap`          | 🎉 `bootstrap: Initial commit.`                                                                                          |
+| `build`              | 🏗️ Changes that affect the build system.                                                                                 |
+| `chore` or `cleanup` | 🧹 A chore or cleanup, usually to keep the project tidy.                                                                 |
+| `ci`                 | 👷 Changes to the CI configuration files and scripts.                                                                    |
+| `config`             | ⚙️ Changes that affect the project configurations.                                                                       |
+| `deps`               | ⬆️ Changes regarding dependencies (upgrade, downgrade)                                                                   |
+| `docs`               | 📖 A modification or addition to the documentation.                                                                      |
+| `feat`               | ✨ A new feature.                                                                                                        |
+| `fix`                | 🐛 A bug fix.                                                                                                            |
+| `i18n`               | ⛳️ An internationalization change.                                                                                      |
+| `perf`               | ⏱️ A performance improvement.                                                                                            |
+| `refactor`           |  ♻️ A code refactor.                                                                                                     |
+| `refine`             | 🧪 A code experiment or a feature refinement.                                                                            |
+| `release`            | 🔖 A release.                                                                                                            |
+| `revert`             | ⏪️ A commit revert (`revert(fbb6553)`)                                                                                  |
+| `security`           | 🔒️ A security fix or improvement.                                                                                       |
+| `style`              | 💄 A style (could be assets or code formatting).                                                                         |
+| `test`               | ✅ A test suite change.                                                                                                  |
+| `wip`                | Can be used inside a development branch or simply use `-n` or `--no-verify` to your `git commit` call to skip the hooks. |
+
+## Specifying Scopes
 
 ```js
 // .commitlintrc.cjs
@@ -74,33 +98,12 @@ module.exports = {
       2,
       'always',
       [
+        // i.e: application component scopes
         'auth',
         'billing'
-        // ...
-      ]
-    ]
-  }
-};
-```
-
-```bash
-git commit -m "feat(billing): Update sales tax strategy.'
-```
-
-Specifying package names in a monorepo context:
-
-```js
-// .commitlintrc.cjs
-module.exports = {
-  extends: ['@gcoguiec/commitlint-config'],
-  rules: {
-    'scope-enum': [
-      2,
-      'always',
-      [
+        // or package names in a monorepo context
         'eslint-config-base',
         'eslint-config-react'
-        // ...
       ]
     ]
   }
@@ -108,7 +111,8 @@ module.exports = {
 ```
 
 ```bash
-git commit -m "deps(eslint-config-react): Bump dependencies.'
+git commit -m 'feat(billing): Update sales tax strategy.'
+git commit -m 'deps(eslint-config-react): Bump dependencies.'
 ```
 
 ## License

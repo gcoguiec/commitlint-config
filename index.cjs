@@ -26,8 +26,7 @@ module.exports = {
         'security',
         'style',
         'test',
-        'wip',
-        'workflow'
+        'wip'
       ]
     ],
     'scope-case': [2, 'always', 'lowercase'],
