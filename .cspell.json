@@ -27,7 +27,7 @@
     "/TS[^\\s]+/",
     "\\(#.+?\\)"
   ],
-  "words": ["commitlint", "lowercased", "uppercased", "wrongtype"],
+  "words": ["gcoguiec", "commitlint", "lowercased", "uppercased", "wrongtype"],
   "overrides": [
     {
       "filename": "**/*.{ts,js}",
