@@ -83,7 +83,7 @@ git commit -m "unknown: Initial commit." # fails: commit type doesn't exists.
 | `release`            | 🔖 A release.                                                                                                            |
 | `revert`             | ⏪️ A commit revert (`revert(fbb6553)`)                                                                                  |
 | `security`           | 🔒️ A security fix or improvement.                                                                                       |
-| `style`              | 💄 A style (could be assets or code formatting).                                                                         |
+| `style`              | 💄 A style change (could be assets or code formatting).                                                                  |
 | `test`               | ✅ A test suite change.                                                                                                  |
 | `wip`                | Can be used inside a development branch or simply use `-n` or `--no-verify` to your `git commit` call to skip the hooks. |
 
