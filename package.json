@@ -7,7 +7,7 @@
   "packageManager": "pnpm@7.25.1",
   "type": "module",
   "files": [
-    "index.mjs"
+    "index.cjs"
   ],
   "repository": {
     "type": "git",
