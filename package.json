@@ -29,7 +29,7 @@
     "precommit": "pnpm lint-staged",
     "prepare": "husky install",
     "prepush": "pnpm fmt:check",
-    "publish": "pnpm publish -r --access public",
+    "publish": "pnpm publish --access public",
     "spellcheck": "cspell --config=.cspell.json \"**/*.{md,js,cjs,mjs}\"",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
