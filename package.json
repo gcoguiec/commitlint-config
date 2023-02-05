@@ -1,10 +1,11 @@
 {
   "name": "@gcoguiec/commitlint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "gcoguiec's commitlint config",
   "author": "Guillaume 'Yugo' Coguiec <mail@gcoguiec.com> (https://github.com/gcoguiec/)",
   "license": "BSD-2-Clause",
   "packageManager": "pnpm@7.25.1",
+  "main": "index.cjs",
   "type": "module",
   "files": [
     "index.cjs"
