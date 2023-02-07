@@ -81,7 +81,7 @@ git commit -m "unknown: Initial commit." # fails: commit type doesn't exists.
 | `fix`                | 🐛 A bug fix.                                                                                                            |
 | `i18n`               | ⛳️ An internationalization change.                                                                                      |
 | `perf`               | ⏱️ A performance improvement.                                                                                            |
-| `refactor`           |  ♻️ A code refactor.                                                                                                     |
+| `refactor`           | ♻️ A code refactor.                                                                                                      |
 | `refine`             | 🧪 A code experiment or a feature refinement.                                                                            |
 | `release`            | 🔖 A release.                                                                                                            |
 | `revert`             | ⏪️ A commit revert (`revert(fbb6553)`)                                                                                  |
