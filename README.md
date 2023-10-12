@@ -69,7 +69,7 @@ git commit -m "unknown: Initial commit." # fails: commit type doesn't exists.
 
 | Type                 | Description                                                                                                              |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `a11y`               | ♿️ Changes regarding accessibility or inclusivity.                                                                      |
+| `a11y`               | ♿️ Changes regarding accessibility or inclusivity.                                                                       |
 | `bootstrap`          | 🎉 `bootstrap: Initial commit.`                                                                                          |
 | `build`              | 🏗️ Changes that affect the build system.                                                                                 |
 | `chore` or `cleanup` | 🧹 A chore or cleanup, usually to keep the project tidy.                                                                 |
@@ -79,7 +79,7 @@ git commit -m "unknown: Initial commit." # fails: commit type doesn't exists.
 | `docs`               | 📖 A modification or addition to the documentation.                                                                      |
 | `feat`               | ✨ A new feature.                                                                                                        |
 | `fix`                | 🐛 A bug fix.                                                                                                            |
-| `i18n`               | ⛳️ An internationalization change.                                                                                      |
+| `i18n`               | ⛳️ An internationalization change.                                                                                       |
 | `perf`               | ⏱️ A performance improvement.                                                                                            |
 | `refactor`           | ♻️ A code refactor.                                                                                                      |
 | `refine`             | 🧪 A code experiment or a feature refinement.                                                                            |

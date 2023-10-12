@@ -1,10 +1,9 @@
 {
   "name": "@gcoguiec/commitlint-config",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "gcoguiec's commitlint config",
   "author": "Guillaume 'Yugo' Coguiec <mail@gcoguiec.com> (https://github.com/gcoguiec/)",
   "license": "BSD-2-Clause",
-  "packageManager": "pnpm@7.25.1",
   "main": "index.cjs",
   "type": "module",
   "files": [
@@ -35,22 +34,26 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.2",
-    "@commitlint/lint": "^17.4.2",
-    "@gcoguiec/eslint-config-base": "^1.0.1",
-    "cspell": "^6.20.1",
-    "eslint": "^8.33.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jest": "^27.2.1",
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/lint": "^17.7.0",
+    "@gcoguiec/eslint-config-base": "^1.0.4",
+    "cspell": "^7.3.7",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jest": "^27.4.2",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
-    "jest": "^29.4.1",
-    "lint-staged": "^13.1.0",
-    "prettier": "^2.8.3"
+    "jest": "^29.7.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
   },
-  "engines": {
-    "node": ">=19",
-    "pnpm": ">=7"
-  }
+  "devEngines": {
+    "node": ">=20"
+  },
+  "volta": {
+    "node": "20.7.0",
+    "pnpm": "8.9.0"
+  },
+  "packageManager": "pnpm@8.9.0"
 }

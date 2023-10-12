@@ -1,14 +1,16 @@
 {
-  "version": "0.1",
-  "language": "en",
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en-US",
   "ignorePaths": [
-    "**/coverage/**",
     "**/node_modules/**",
-    "**/dist/**",
     "**/**/CHANGELOG.md",
     "**/**/LICENSE.md",
     "**/*.{json,snap}",
-    ".cspell.json"
+    ".cspell.json",
+    "dist/**",
+    "coverage/**",
+    "src/pages/**.md"
   ],
   "dictionaries": [
     "typescript",
@@ -37,7 +39,7 @@
   ],
   "overrides": [
     {
-      "filename": "**/*.{ts,js,cjs,mjs}",
+      "filename": "**/*.{ts,js}",
       "ignoreRegExpList": ["/@[a-z]+/", "/#(end)?region/"],
       "includeRegExpList": [
         "/\\/\\*[\\s\\S]*?\\*\\/|([^\\\\:]|^)\\/\\/.*$/",
