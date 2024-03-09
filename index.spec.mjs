@@ -1,8 +1,7 @@
-import linter from '@commitlint/lint';
+import lint from '@commitlint/lint';
 
 import config from './index.cjs';
 
-const lint = linter.default;
 const { rules, parserPreset } = config;
 
 expect.extend({
