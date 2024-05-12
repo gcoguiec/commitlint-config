@@ -1,3 +1,4 @@
+import { expect, describe, it } from 'vitest';
 import lint from '@commitlint/lint';
 
 import config from './index.cjs';
