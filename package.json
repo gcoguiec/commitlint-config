@@ -25,7 +25,7 @@
     "fmt:check": "prettier --list-different \"./**/*.{js,cjs,json,md}\"",
     "lint": "eslint .",
     "lint:fix": "pnpm lint --fix",
-    "lint:conflicts": "npx eslint-config-prettier .eslintrc.cjs",
+    "lint:conflicts": "ESLINT_USE_FLAT_CONFIG=true npx eslint-config-prettier",
     "precommit": "pnpm lint-staged",
     "prepare": "husky || true",
     "prepush": "pnpm fmt:check",
